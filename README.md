@@ -3,6 +3,13 @@ repository for code-war katas
 
 # Completed Katas
 
+
+**Move All Vowels (7th kyu)**
+
+- **Module**: `move-all-vowels.py`
+- **Tests**: `test-move-all-vowels.py`
+- **URL**: [challenge url](https://www.codewars.com/kata/move-all-vowels/train/python)
+
 **Filter Even Length Words (7th kyu)**
 
 - **Module**: `filter-even-length-words.py`
