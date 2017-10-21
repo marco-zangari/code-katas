@@ -1,4 +1,4 @@
-# code-katas
+# CODE-KATAS
 repository for code-war katas
 
 # Completed Katas
