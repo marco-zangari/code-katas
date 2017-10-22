@@ -8,7 +8,13 @@ setup(
 	package_dir={'':'src'},
 	author='Marco Zangari',
 	author_email=('mjzangari@gmail.com'),
-	py_modules=['reversed-strings.py', 'test-reversed-strings.py', et al],
+	py_modules=[],
 	install_requires=[],
-	extras_require={}
+	extras_require={
+	'testing': ['pytest', 'pytest-cov', 'pytest-watch', 'tox'],
+	'development': ['ipython']
+	},
 
+	entry_points={
+	}
+)
