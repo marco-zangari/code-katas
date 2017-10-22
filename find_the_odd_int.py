@@ -8,13 +8,13 @@ def find_it(seq):
             return i"""
 
 def find_it(seq):
-	"""function finds the integer that has the odd number of values once collected into a dictionary."""
+    """function finds the integer that has the odd number of values once collected into a dictionary."""
     counter = {}
     for item in seq:
         if item in counter:
-          counter[item] += 1
+            counter[item] += 1
         else:
-          counter[item] = 1
+            counter[item] = 1
     for item in counter:
         if counter[item] % 2 != 0:
             return item
