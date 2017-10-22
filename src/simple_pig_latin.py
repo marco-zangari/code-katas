@@ -10,7 +10,7 @@ def pig_it(text):
 
 
 def pig_it(text):
-	"""Removes first letter of an original word and returns a new word with original word's first letter at end with addition of 'ay'."""
+    """Removes first letter of an original word and returns a new word with original word's first letter at end with addition of 'ay'."""
     pyg = 'ay'
     text_var = text.split()
     each_word = []

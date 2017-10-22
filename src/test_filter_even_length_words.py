@@ -1,7 +1,7 @@
 """Tests the filter even length words kata."""
 import pytest
 
-FIND_PARAMS = [(["Hello", "World"]),[], (["One", "Two", "Three", "Four"],["Four"]), (["Bob", "Rhino", "Paul"], ["Paul"])]
+FIND_PARAMS = [(["Hello", "World"],[]), (["One", "Two", "Three", "Four"],["Four"]), (["Bob", "Rhino", "Paul"], ["Paul"])]
 
 @pytest.mark.parametrize('n, result', FIND_PARAMS)
 def test_find_it(n, result):

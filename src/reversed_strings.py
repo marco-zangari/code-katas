@@ -7,5 +7,5 @@ def solution(str):
 """
 
 def solution(string):
-	"""Returns a reversed string with built in splice function."""
+    """Returns a reversed string with built in splice function."""
     return(string[::-1])

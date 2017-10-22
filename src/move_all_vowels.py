@@ -7,7 +7,7 @@ def move_vowels(s):
 ."""
 
 def move_vowels(x):
-	"""Removes vowels from single word. Places them at end of new word."""
+    """Removes vowels from single word. Places them at end of new word."""
     vowel_str = 'aeiou'
     con_string = ''
     vowel_string = ''
