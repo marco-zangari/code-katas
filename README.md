@@ -3,6 +3,12 @@ repository for code-war katas
 
 # Completed Katas
 
+**Find the Odd Int (6th kyu)**
+
+- **Module**: `find-the-odd-int.py`
+- **Tests**: `test-find-the-odd-int.py`
+- **URL**: [challenge url](https://www.codewars.com/kata/find-the-odd-int/train/python)
+
 **Simple Pig Latin (5th kyu)**
 
 - **Module**: `simple-pig-latin.py`
