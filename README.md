@@ -3,6 +3,11 @@ repository for code-war katas
 
 # Completed Katas
 
+**Simple Pig Latin (5th kyu)**
+
+- **Module**: `simple-pig-latin.py`
+- **Tests**: `test-simple-pig-latin.py`
+- **URL**: [challenge url](https://www.codewars.com/kata/simple-pig-latin/train/python)
 
 **Move All Vowels (7th kyu)**
 
