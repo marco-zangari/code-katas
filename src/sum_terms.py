@@ -1,5 +1,5 @@
 """
-Kata: Sum of First nth Term of Series - Sum an nth series with floated value
+Kata: Sum of First nth Term of Series - Sum an nth series with a floated value
 
 #1 Best Practices: MMMAAANNN et al.
 
