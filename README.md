@@ -3,6 +3,13 @@ repository for code-war katas
 
 # Completed Katas
 
+**String Pyramid
+
+- **Module**: `string_pyramid.py`
+- **Tests**: `test_string_pyramid.py`
+- **URL**: [challenge url](https://www.codewars.com/kata/string-pyramid/train/python)
+
+
 **Sum of First nth Term of Series (7th kyu)**
 
 - **Module**: `sum_terms.py`
