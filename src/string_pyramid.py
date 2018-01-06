@@ -1,8 +1,33 @@
-"""Implement a string pyramid."""
+"""
+Kata String Pyramid - Output side and top view of a pyramid as well as counts of characters in strings
+
+#1 Best Practices: Blind4Basics
+
+def watch_pyramid_from_the_side(characters):
+    if not characters : return characters
+    baseLen = len(characters)*2-1
+    return '\n'.join( ' '*(i) + characters[i]*(baseLen-2*i) + ' '*(i) for i in range(len(characters)-1,-1,-1) )
+
+
+def watch_pyramid_from_above(characters):
+    if not characters : return characters
+    baseLen = len(characters)*2-1
+    return '\n'.join( characters[0:min(i,baseLen-1-i)] + characters[min(i,baseLen-1-i)]*(baseLen-2*min(i,baseLen-1-i)) + characters[0:min(i,baseLen-1-i)][::-1] for i in range(baseLen) )
+
+
+def count_visible_characters_of_the_pyramid(characters):
+    return -1 if not characters else (len(characters)*2-1)**2
+
+
+def count_all_characters_of_the_pyramid(characters):
+    return -1 if not characters else sum( (2*i+1)**2 for i in range(len(characters)) )
+."""
 
 
 def watch_pyramid_from_the_side(characters):
     """String pyramid implementation."""
+    if not characters:
+        return characters
     container = []
     str_len = len(characters)
     count = str_len + (str_len - 1)
@@ -19,11 +44,13 @@ def watch_pyramid_from_the_side(characters):
     for item in new_container:
         concat = (' ' * ((count - len(item)) // 2)) + item + (' ' * ((count - len(item)) // 2)) + '\n'
         newer_container.append(concat)
-    return "".join(newer_container)
+    return "".join(newer_container).rstrip('\n')
 
 
 def watch_pyramid_from_above(characters):
     """String pyramid implementation view from above."""
+    if not characters:
+        return characters
     str_len = len(characters)
     count = str_len + (str_len - 1)
     container = []
@@ -44,7 +71,11 @@ def watch_pyramid_from_above(characters):
             max_count -= 1
             min_count += 1
             count -= 2
-    return container
+    output = ''
+    for row in container:
+        joined = "".join(row)
+        output += joined + '\n'
+    return output.rstrip('\n')
 
 
 def count_visible_characters_of_the_pyramid(characters):
