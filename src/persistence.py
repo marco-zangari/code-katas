@@ -19,6 +19,7 @@ def persistence(n, count=0):
 def persistence2(n):
     """."""
     cumul = 1
-    for num in n:
+    str_n = str(n)
+    for num in str_n:
         cumul *= int(num)
     return cumul
