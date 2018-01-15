@@ -16,6 +16,13 @@ def is_palin(word):
         return False
 
 
+def palin_build(s):
+    """Build palindrome from string letter sequence."""
+    for i in range(len(s)):
+            if is_palin(s[i:]):
+                return s + s[:i][::-1]
+
+
 def short_palin(s):
     """."""
     init_suff = s[-2] + s[-1]
@@ -38,11 +45,3 @@ def short_palin(s):
     else:
         palin = s[:i + 1] + suffix + s[:i + 1][::-1]
         return palin
-
-
-def palin_build(s):
-    """Build palindrome from string letter sequence."""
-    len_seq = len(s)
-    for i in range(len_s):
-        if is_palin(s[:i]):
-            return s[:i] + s[i:][::-1]
