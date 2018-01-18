@@ -8,7 +8,8 @@ def find_nums(a):
     output = integers, that fill in gaps of input
     """
     res = []
-    for i in range(len(a) - 1):
-        if abs(a[i] - a[i + 1]) != 1:
-            res.append(a[i] + 1)
+    comp = list(range(a[0], a[-1]))
+    for num in a:
+        if num not in comp:
+            res.append(num)
     return res
