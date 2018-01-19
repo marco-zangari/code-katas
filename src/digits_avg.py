@@ -1,7 +1,5 @@
 """Digits Average, CodeWars Kata, level 7."""
 
-import math
-
 
 def digitsaverage(d):
     """Return the average of the digits until number is one digit.
