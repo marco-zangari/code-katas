@@ -1,4 +1,4 @@
-"""Remove Smallets, CodeWars kata, level 7."""
+"""Remove Smallest, CodeWars kata, level 7."""
 
 
 def remove_smallest(nums):
