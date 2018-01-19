@@ -9,7 +9,7 @@ def find_nums(a):
     """
     res = []
     comp = list(range(a[0], a[-1]))
-    for num in a:
-        if num not in comp:
+    for num in comp:
+        if num not in a:
             res.append(num)
     return res
