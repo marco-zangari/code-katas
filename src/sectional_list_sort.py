@@ -17,7 +17,7 @@ def sect_sort(arr, start, length=0):
         return arr
     if length == 0:
         pre = arr[:start]
-        return prestart + sorted(arr[start:])
+        return pre + sorted(arr[start:])
     if length > 0:
         pre = arr[:start]
         mid = sorted(arr[start: start + length])
