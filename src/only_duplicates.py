@@ -12,6 +12,17 @@ def remove_unique(s):
             res.append(ch)
     return ''.join(res)
 
+
+def histo(s):
+    """Create histogram object."""
+    d = dict()
+    for ch in s:
+        if ch not in d:
+            d[ch] = 1
+        else:
+            d[ch] += 1
+    return d
+
 if __name__ == '__main__':
     s = 'abccdefee'
-    remove_unique(s)
+    print(f'The string, {s}, yields {remove_unique(s)} as an answer')
